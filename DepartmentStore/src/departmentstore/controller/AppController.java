@@ -24,9 +24,9 @@ public class AppController {
 
     public void start() {
 
-        System.out.print("Enter filename to load: ");
+        System.out.print("Enter filename to load, (Enter ApplicantsForm.txt to access the file): ");
         String file = sc.nextLine();
-        employeeList.loadFromFile(file);
+        employeeList.loadFromFile("src/departmentstore/" + file);
 
         while (true) {
             System.out.println("\nDo You wish to SORT or SEARCH:");

@@ -32,7 +32,7 @@ public class EmployeeList {
         return employees;
     }
 
-    // ---------------- FILE READING ----------------
+    // File Reading logic
     public void loadFromFile(String filename) {
         try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
             String line;
@@ -60,7 +60,7 @@ public class EmployeeList {
         }
     }
 
-    // ---------------- MERGE SORT (RECURSIVE) ----------------
+    // Merge Sort(Recursive) logic
     public void sort() {
         employees = mergeSort(employees);
         System.out.println("List sorted successfully.");
@@ -93,7 +93,7 @@ public class EmployeeList {
         return result;
     }
 
-    // ---------------- BINARY SEARCH ----------------
+    // Binary Search
     public Employee search(String name) {
         int low = 0, high = employees.size() - 1;
 
@@ -111,7 +111,7 @@ public class EmployeeList {
         return null;
     }
 
-    // ---------------- ADD NEW EMPLOYEE ----------------
+    // Add new employee
     public void addEmployee(Employee e) {
         employees.add(e);
         sort();  // Keep sorted after adding
