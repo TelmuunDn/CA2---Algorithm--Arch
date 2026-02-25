@@ -17,7 +17,7 @@ public class EmployeeList {
 
     private List<Employee> employees = new ArrayList<>();
 
-    // Valid entries for assignment
+    // Valid options for the Managers and Departments, when adding a new record
     private final List<String> validManagers = Arrays.asList(
             "Senior Manager", "Manager", "Team Lead", "Assistant Manager",
             "Supervisor", "Sales Associate"

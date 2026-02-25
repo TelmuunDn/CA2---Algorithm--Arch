@@ -29,7 +29,7 @@ public class AppController {
         employeeList.loadFromFile("src/departmentstore/" + file);
 
         while (true) {
-            System.out.println("\nDo You wish to SORT or SEARCH:");
+            System.out.println("\nPlease Enter Menu Option:");
             System.out.println("1. SORT");
             System.out.println("2. SEARCH");
             System.out.println("3. ADD RECORDS");
